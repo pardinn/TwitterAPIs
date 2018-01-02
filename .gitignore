@@ -12,3 +12,6 @@
 
 # Maven
 **/target/*
+
+# internal files
+**/constants/Auth.java
