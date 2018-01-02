@@ -10,11 +10,45 @@
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.target>1.8</maven.compiler.target><testng.version>6.11</testng.version>
+        <rest-assured.version>3.0.6</rest-assured.version>
+        <json-schema-validator.version>3.0.6</json-schema-validator.version>
+        <testng.version>6.13.1</testng.version>
+        <jcommander.version>1.72</jcommander.version>
+        <scribejava-apis.version>2.5.3</scribejava-apis.version>
     </properties>
 
     <dependencies>
-    </dependencies>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest-assured.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>${json-schema-validator.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+            <version>${jcommander.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.scribejava</groupId>
+            <artifactId>scribejava-apis</artifactId>
+            <version>${scribejava-apis.version}</version>
+            <scope>test</scope>
+        </dependency>
 
+    </dependencies>
 
 </project>
