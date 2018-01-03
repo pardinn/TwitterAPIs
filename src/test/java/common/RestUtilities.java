@@ -44,7 +44,7 @@ public class RestUtilities {
     public static ResponseSpecification getResponseSpecification() {
         RESPONSE_BUILDER = new ResponseSpecBuilder();
         RESPONSE_BUILDER.expectStatusCode(200);
-        RESPONSE_BUILDER.expectResponseTime(lessThan(3L), TimeUnit.SECONDS);
+        RESPONSE_BUILDER.expectResponseTime(lessThan(4L), TimeUnit.SECONDS);
         RESPONSE_SPEC = RESPONSE_BUILDER.build();
         return RESPONSE_SPEC;
     }
@@ -87,7 +87,7 @@ public class RestUtilities {
         }
 
         if (response != null) {
-            response.then().log().all();
+//            response.then().log().all();
             response.then().spec(RESPONSE_SPEC);
         }
         return response;

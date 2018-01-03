@@ -36,7 +36,7 @@ public class UserTimelineTest {
         .when()
                 .get(EndPoints.STATUSES_USER_TIMELINE)
         .then()
-                .log().all()
+//                .log().all()
                 .spec(resSpec)
                 .body("user.screen_name", hasItem("apiautomation"));
     }
@@ -48,7 +48,7 @@ public class UserTimelineTest {
         .when()
                 .get(EndPoints.STATUSES_USER_TIMELINE)
         .then()
-                .log().all()
+//                .log().all()
                 .spec(resSpec)
                 .body("user.screen_name", hasItem("apiautomation"));
     }
